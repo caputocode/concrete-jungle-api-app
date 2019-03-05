@@ -81,3 +81,142 @@ h6 {
   padding-top: 20px;
   padding-right: 20px;
 }
+
+/*....................................Inspiration section*/
+
+/*Animation*/
+
+.animation {
+  position: relative;
+  top: 20px;
+}
+
+.animation_here {
+  height: 20px;
+  width: 20px;
+  margin: 5px auto;
+  background-color: #C52D28;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+
+#inspiration {
+  padding: 0 3em 4em 3em;
+  text-align: center;
+}
+
+/*Paris*/
+
+.paris {
+  background: linear-gradient(to top,
+  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
+  url("../images/paris.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  transition: all 0.3s;
+}
+
+.paris:hover {
+  transform: scale(1.1);
+}
+
+/*New York*/
+
+#ny {
+  border-top: 1px solid black;
+}
+
+
+.ny {
+  background-image: url("../images/newyork.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+
+}
+
+.ny:hover {
+  transform: scale(1.1);
+
+}
+
+/*London*/
+
+.london {
+  background: linear-gradient(to top,
+  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+  url("../images/londonview.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+
+.london:hover {
+  transform: scale(1.1);
+
+}
+
+.border-london {
+  padding-top: 20px;
+}
+
+/*Amsterdam*/
+
+.am {
+  background: linear-gradient(to top,
+  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+  url("../images/ams.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  transition: all 0.3s;
+
+}
+
+.am:hover {
+  transform: scale(1.1);
+}
+
+#amsterdam {
+  border-top: 1px solid black;
+}
+
+.city-quote {
+  padding-left: 10px;
+  padding-top: 20px;
+  color: #fff;
+}
+  
+.london-city-quote {
+    padding-left: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    color: #fff;
+    border-top: 1px solid black;
+    position: relative;
+    top: -40px;
+}
+
+.city-info {
+  padding: 20px;
+  text-align: center;
+}
+
+
+.city-info>h2 {
+  margin-top: 0;
+}
