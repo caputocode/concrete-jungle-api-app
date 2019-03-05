@@ -220,3 +220,120 @@ h6 {
 .city-info>h2 {
   margin-top: 0;
 }
+
+/*.......................................MAP */
+
+/*Search*/
+
+#places {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#search {
+  text-align: center;
+  background-color: #BDCADA;
+  padding: 20px;
+  height: 25vh;
+  background-image: url(../images/book.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#country {
+  width: 200px;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+#locationInput {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+
+}
+
+#locationInput input {
+  padding: 10px;
+  width: 200px;
+}
+
+.find-me {
+  padding: 25px 10px 20px 10px;
+}
+
+/*Radio Button Styles*/
+
+.radio {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.selected {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid black;
+}
+
+
+.radio:hover input~.selected {
+  background-color: #F7F6F4;
+}
+
+
+.radio input:checked~.selected {
+  background-color: #C52D28;
+}
+
+
+.radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.radio input:checked~.selected:after {
+  display: block;
+}
+
+
+.radio .selected:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/*Google map style*/
+
+#map-area {
+  padding: 0;
+  margin: 0;
+}
+
+#map {
+  width: 100%;
+  height: 75vh;
+}

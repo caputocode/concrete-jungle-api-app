@@ -152,6 +152,113 @@
                 </div>
             </div>
         </section>
+        <section>
+            
+             <!-- Search Options for Map -->
+            
+            <div class="row">
+                <div id="places" class="col-xs-12 col-md-4">
+                    <div id="search">
+            
+                        <!-- Country Selection -->
+            
+                        <div class="custom-select" id="controls">
+                            <select id="country">
+                                <option value = "all" selected>All</option>
+                                <option value = "us">USA</option>
+                                <option value = "nl">Netherlands</option>
+                                <option value = "uk">UK</option>
+                                <option value = "fr">France</option>
+                            </select>
+                        </div>
+            
+                        <!-- Search box for entering a location -->
+            
+                        <div id="locationInput">
+                            <input id="autocomplete" placeholder="Enter location" type="text" />
+                        </div>
+                    </div>
+            
+                    <div class="find-me">
+                        <span class="hidden-xs">Find Me: </span>
+                    </div>
+                    <div class="markers">
+                        <label class="radio" for="lodging">Hotels
+                            <input onchange="search()" type="radio" id="lodging" name="option" checked="checked" disabled />
+                            <span class="selected"></span>
+                        </label>
+            
+                        <label class="radio" for="restaurant">Restaurants                    
+                            <input onchange="search()" type="radio" id="restaurant" name="option" disabled />
+                            <span class="selected"></span>
+                        </label>
+            
+                        <label class="radio" for="bar">Bars                    
+                            <input onchange="search()" type="radio" id="bar" name="option" disabled />
+                            <span class="selected"></span>
+                        </label>
+                                
+                        <label class="radio" for="art_gallery">Art Gallery
+                            <input onchange="search()" type="radio" id="art_gallery" name="option" disabled />
+                            <span class="selected"></span>
+                        </label>
+            
+                        <label class="radio" for="shopping_mall">Shopping
+                            <input onchange="search()" type="radio" id="shopping_mall" name="option" disabled />
+                            <span class="selected"></span>
+                        </label>
+                    </div>
+                </div>
+            
+                <!-- Map -->
+            
+                <div id="map-area" class="col-xs-12 col-md-8">
+                    <div id="map"></div>
+                </div>
+            
+            </div>
+
+
+            <!-- Search Results Table -->
+            <div class="row">
+                <div class="hidden" id="listing">
+                    <table id="resultsTable">
+                        <tbody id="results"></tbody>
+                    </table>
+                </div>
+            </div>
+            
+            
+            <!-- Info Window -->
+            
+            <div style="display: none">
+                <div id="info-window">
+                    <table>
+                        <tr id="iw-url-row" class="iw_table_row">
+                            <td id="iw-icon" class="iw_table_icon"></td>
+                            <td id="iw-url"></td>
+                        </tr>
+                        <tr id="iw-address-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Address:</td>
+                            <td id="iw-address"></td>
+                        </tr>
+                        <tr id="iw-phone-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Telephone:</td>
+                            <td id="iw-phone"></td>
+                        </tr>
+                        <tr id="iw-rating-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Rating:</td>
+                            <td id="iw-rating"></td>
+                        </tr>
+                        <tr id="iw-website-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Website:</td>
+                            <td id="iw-website"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+        </section>
 
     </div>        
             
