@@ -338,6 +338,33 @@ h6 {
   height: 75vh;
 }
 
+/*.......................................Booking Form*/
+
+.form_box {
+  width: 90%;
+  height: 270px;
+  position: relative;
+  bottom: 50px;
+  background-color: #474A59;
+  margin: 0 auto;
+}
+
+.book_box {
+  width: 70%;
+  height: 200px;
+  background-color: #F7F6F4;
+  margin: 20px auto;
+
+}
+
+.form-horizontal {
+  margin: 15px;
+}
+
+.book-text {
+  padding: 20px;
+}
+
 /*.........................................Footer */
 
 footer {
@@ -360,4 +387,63 @@ footer {
   font-size: 24px;
   padding: 25px;
   color: #fff;
+}
+
+/*.........................................MEDIA QUERIES */
+
+@media (min-width: 767px) {
+  #about-us {
+    text-align: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    padding: 4em 3em 6em 3em;
+  }
+
+  .nav-headings {
+    font-size: 16px;
+  }
+
+  #centersearch {
+    height: 50vh;
+  }
+
+  .border-london,
+  .london-city-quote,
+  #amsterdam,
+  #ny {
+    border: none;
+  }
+
+  .border-london {
+    padding-top: 0;
+  }
+
+  .ny,
+  .london {
+    margin-bottom: 0;
+  }
+
+  .footer-text {
+    padding: 25px 15px 25px 25px;
+  }
+
+  #inputName {
+    margin-top: 20px;
+  }
+
+  .form_box {
+    width: 75%;
+  }
+
+  .book_box {
+    width: 50%;
+  }
+  
+}
+
+@media (min-width: 992px) {
+  
+  #search {
+    height: 50vh
+  }
 }
