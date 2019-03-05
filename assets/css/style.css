@@ -1,0 +1,83 @@
+
+body {
+  font-family: 'Lora', serif;
+  font-size: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+
+/*.......................................Nav*/
+
+.nav {
+  min-height: 55px;
+  color: #000;
+}
+
+.nav-headings {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 5px;
+  margin-top: 5px;
+
+
+}
+
+.nav:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+
+}
+
+/*......................................Header section*/
+
+#cityscape {
+  background: linear-gradient(to bottom,
+  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+  url("../images/amsterdam.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.headings {
+  padding: 140px 45px 10px 45px;
+  color: white;
+}
+
+/*......................................About Us Section*/
+
+.main-title {
+  margin-top: 0;
+}
+
+#about-us {
+  text-align: center;
+  padding: 0 3em 2em 3em;
+}
+
+.icons {
+  font-size: 24px;
+  color: #C52D28;
+}
+
+.icons i {
+  padding-top: 20px;
+  padding-right: 20px;
+}
