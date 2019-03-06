@@ -85,30 +85,30 @@ var hostnameRegexp = new RegExp('^https?://.+?/');
  function search() {
 
   var amenity = 'lodging'; 
+  clearMarkers();
+  markers = [];
 
-  if (document.getElementById("restaurant").checked) {
+  if (document.getElementById("restaurant").checked) 
    amenity = 'restaurant'; 
-   
-  }
+
   clearMarkers();
   markers = [];
   
-  if (document.getElementById("bar").checked) {
+  if (document.getElementById("bar").checked) 
    amenity = 'bar';
-   
-  }
+
   clearMarkers();
   markers = [];
   
-  if (document.getElementById("art_gallery").checked) {
+  if (document.getElementById("art_gallery").checked) 
    amenity = 'art_gallery';
-  }
+  
   clearMarkers();
   markers = [];
   
-  if (document.getElementById("shopping_mall").checked) {
+  if (document.getElementById("shopping_mall").checked) 
    amenity = 'shopping_mall';
-  }
+  
   clearMarkers();
   markers = [];
 
@@ -285,8 +285,6 @@ var hostnameRegexp = new RegExp('^https?://.+?/');
   }
  }
 
-// Functions required to execute once page is loaded
-
 $(document).ready(function() {
     
     // Function for emptying location field when a new country is selected
@@ -304,10 +302,10 @@ $(document).ready(function() {
         markers= [];
     });
 
-    // Function for disbaling use of radio button when the location field is empty.
+    // Function for disbaling use of radio buttons when the location field is empty.
     // If length of input field > 0 enable radio buttons , if field is empty then disable
     
-    $('input[type="text"]').on('input propertychange', function(e) {
+    $('input[type="text"]').on('input propertychange paste', function() {
         if ($('#autocomplete').val().length > 0) {
              $('input[type="radio"]').prop('disabled', false);
         }
@@ -315,7 +313,6 @@ $(document).ready(function() {
            $('input[type="radio"]').prop('disabled', true);
         }
     });
-
 }); 
 
 

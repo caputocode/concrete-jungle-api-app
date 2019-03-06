@@ -35,7 +35,7 @@ h6 {
 }
 
 .nav:hover {
-  background-color: black;
+  background-color: #1E1D18;
   color: white;
   cursor: pointer;
 
@@ -64,6 +64,7 @@ h6 {
 /*......................................About Us Section*/
 
 .main-title {
+  font-weight: 900;
   margin-top: 0;
 }
 
@@ -353,20 +354,29 @@ h6 {
 
 /*.......................................Booking Form*/
 
+.booking-img {
+  background-image: url("../images/cityplane.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  transition: all 0.3s;
+}
+
+
 .form_box {
-  width: 90%;
-  height: 270px;
-  position: relative;
-  bottom: 50px;
-  background-color: #474A59;
-  margin: 0 auto;
+  background-color: #1E1D18;
+  margin-bottom: 20px;
+  
 }
 
 .book_box {
-  width: 70%;
-  height: 200px;
   background-color: #F7F6F4;
-  margin: 20px auto;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  top: 40px;
+  border: 1px solid black;
+  margin: 0 auto;
 
 }
 
@@ -374,34 +384,41 @@ h6 {
   margin: 15px;
 }
 
+.book-heading {
+  margin-top: 0;
+  font-weight: 900;
+}
+
 .book-text {
-  padding: 20px;
+  padding: 30px;
 }
 
-.to-top-button {
-  padding: 10px;
-  background-color: #000;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  border: 1px solid #cd5360;
-  margin-bottom: 20px;
-}
-
-.button {
-  text-align: center;
-}
-
-.to-top-button:hover {
+.top-btn {
+  padding: 5px;
   background-color: #fff;
-  color: black
+  color: #1E1D18;
+  border: 1px solid #cd5360;    
+  position: relative;
+  bottom: 130px;
+  left: 210px;
+
 }
+
+.top-btn:hover {
+  background-color: #1E1D18;
+  color: #fff;
+}
+
+.top-btn span {
+  padding: 3px;
+}
+
 
 /*.........................................Footer */
 
 footer {
-  background-color: #cd5360;
-  color: #fff;
+  background-color: #F7F6F4;
+  color: #000;
   text-align: center;
 }
 
@@ -418,7 +435,7 @@ footer {
 .icon-style i {
   font-size: 24px;
   padding: 25px;
-  color: #fff;
+  color: #000;
   transition: all .2s ease-in-out;
 }
 
@@ -440,7 +457,7 @@ footer {
     font-size: 16px;
   }
 
-  #centersearch {
+  #search {
     height: 50vh;
   }
 
@@ -468,12 +485,18 @@ footer {
     margin-top: 20px;
   }
 
-  .form_box {
-    width: 75%;
-  }
-
   .book_box {
-    width: 50%;
+    position: relative;
+    top: 80px;
+  }
+  .form_box {
+    position: relative;
+    top: 50px;
+  }
+  
+  .button {
+    position: relative;
+    bottom: 0;
   }
   
 }
