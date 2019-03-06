@@ -124,8 +124,9 @@ h6 {
 
 
 #inspiration {
-  padding: 0 3em 4em 3em;
+  padding: 3em 1em 3em 1em;
   text-align: center;
+  background-color: #F7F6F4;
 }
 
 /*Paris*/
@@ -183,6 +184,15 @@ h6 {
   transform: scale(1.1);
 
 }
+.london-city-quote {
+    padding-left: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    color: #fff;
+    border-top: 1px solid black;
+    position: relative;
+    top: -40px;
+}
 
 .border-london {
   padding-top: 20px;
@@ -209,21 +219,14 @@ h6 {
   border-top: 1px solid black;
 }
 
+/*General*/
+
 .city-quote {
   padding-left: 10px;
   padding-top: 20px;
   color: #fff;
 }
   
-.london-city-quote {
-    padding-left: 10px;
-    margin-top: 20px;
-    padding-top: 20px;
-    color: #fff;
-    border-top: 1px solid black;
-    position: relative;
-    top: -40px;
-}
 
 .city-info {
   padding: 20px;
@@ -448,9 +451,7 @@ footer {
 @media (min-width: 767px) {
   #about-us {
     text-align: center;
-    padding-top: 4em;
-    padding-bottom: 4em;
-    padding: 4em 3em 6em 3em;
+    padding: 4em 3em 4em 3em;
   }
 
   .nav-headings {
@@ -493,12 +494,6 @@ footer {
     position: relative;
     top: 50px;
   }
-  
-  .button {
-    position: relative;
-    bottom: 0;
-  }
-  
 }
 
 @media (min-width: 992px) {
