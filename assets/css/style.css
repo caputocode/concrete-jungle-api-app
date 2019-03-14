@@ -106,19 +106,32 @@ h6 {
 }
 
 .animation_here {
-  height: 20px;
-  width: 20px;
+  
   margin: 5px auto;
-  background-color: #cd5360;
-  animation: rotate 3s linear infinite;
+  font-size: 40px;
+  animation: bounce 2s infinite;
 }
 
-@keyframes rotate {
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+	40% {
+    transform: translateY(-24px);
+  }
+	60% {
+    transform: translateY(-12px);
+  }
+    
+}
+
+
+@keyframes zoom {
   0% {
-    transform: rotate(0deg);
+    transform: translateX(-1000px);
   }
   100% {
-    transform: rotate(359deg);
+    transform: translateX(200px);
   }
 }
 
@@ -348,7 +361,7 @@ h6 {
 
 #map-area {
   padding: 0;
-  margin: 0px 0px 30px 0px;
+  margin: 0;
 }
 
 #map {
@@ -368,8 +381,7 @@ h6 {
 
 
 .form_box {
-  background-color: #1E1D18;
-  margin-bottom: 20px;
+  margin-bottom: 105px;
   
 }
 
@@ -460,7 +472,7 @@ footer {
 @media (min-width: 767px) {
   #about-us {
     text-align: center;
-    padding: 4em 3em 4em 3em;
+    padding: 4em 6em 4em 6em;
   }
 
   .nav-headings {
@@ -505,13 +517,140 @@ footer {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1274px) {
   
   #search {
-    height: 50vh
+    height: 50vh;
   }
   
   .top_btn {
     left: 90%;
   }
+  
+    /*Animation*/
+  
+  .animation {
+    position: relative;
+    top: 20px;
+  }
+  
+  .animation_here {
+    
+    margin: 5px auto;
+    font-size: 40px;
+    animation: zoom 2s linear forwards;
+  }
+
 }
+
+
+
+
+/*ALTERNATIVE FORM*/
+
+button {
+  overflow: visible;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+form {
+  padding: 35px;
+  margin: 50px 0;
+  background: rgb(255,255,255, 0.8)
+}
+
+.submit {
+  text-align: center;
+}
+
+#inputName, #inputEmail, #country_input, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #1E1D18;
+	font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 2em 0;
+	padding: 0 0 1em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  color: #1E1D18
+}
+
+::-webkit-input-placeholder {
+	color: #000;
+}
+
+:-moz-placeholder { 
+	color: #000;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #000;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #000;
+}
+
+#form_button {
+  background: none;
+  border: 2px solid #1E1D18;
+  color: #1E1D18;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background-color: #1E1D18;
+  color: #fff;
+}
+
+
+
