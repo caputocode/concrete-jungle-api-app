@@ -82,7 +82,8 @@ This project has been deployed on GitHub Pages and can be accessed <a href="http
 ## Credits
 
 I spent a while trying to enable the following functions.
-Stack Overflow was extremely useful in helping with these problems. I also found Youtube videos....helpful 
+Stack Overflow was extremely useful in helping with these problems.
+I had inspiration for my booking form from codepen
 
 
 ## Content
@@ -93,4 +94,4 @@ Google Map/Places was used to provide JS code for the map.
 The photos used in this site were obtained from Unsplash and Pexel websites which provide free to use images. 
 
 ## Acknowledgements
-I received inspiration for this project from X
+I received inspiration for this project from voyage prive 

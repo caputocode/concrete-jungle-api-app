@@ -5,6 +5,7 @@ function sendEmail(contactForm) {
         emailjs.send("gmail", "heather", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
+        "chosen_country": contactForm.country.value,
         "citybreak_request": contactForm.citybreaksummary.value
     })
     .then(
