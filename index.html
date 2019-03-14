@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1" >
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.0/css/hover-min.css" type="text/css" />
@@ -61,11 +61,11 @@
                 </div>
             </nav>
         </header>
+        
+        
+        <!--About Us Section  -->
 
         <section>
-            
-             <!--About Us Section  -->
-
             <div class="row">
                 <div class="col-xs-12">
                     <div id="about-us">
@@ -79,12 +79,12 @@
                     </div>
                 </div>
             </div>
-            
         </section>
+        
+        
+         <!--Inspiration Section-->
+        
         <section>
-            
-            <!--Inspiration Section-->
-            
             <div id="inspiration" class="row">
                 <div class="col-xs-2 animation">
                     <div class="animation_here"></div>
@@ -163,7 +163,19 @@
         </section>
         <section>
             
-             <!-- Search Options for Map -->
+            <div id="mapFind" class="row">
+                <div class="col-xs-2 animation">
+                    <div class="animation_here"></div>
+                </div>
+                <div class="col-xs-8">
+                    <h3>Search our recommended countries for your city break</h3>
+                    <p>Use the map below to explore your city. Find the best hotels, restaurants and more below.</p>
+                </div>
+                <div class="col-xs-2 animation">
+                    <div class="animation_here"></div>
+                </div>
+            </div>
+            <!-- Search Options for Map -->
             
             <div class="row">
                 
@@ -279,7 +291,6 @@
                            <h2 class="book-heading">Book</h2>
                            <p>Found something you like?</p>
                            <p>Fill in your details and we'll get back to you with some quotes</p>
-                            <a href="#nav"><button class="top-btn"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></button></a>
                         </div>
                     </div>
                 </div>
@@ -304,19 +315,22 @@
                         </div>
                       </div>
                       <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <button type="submit" class="btn btn-light">Submit</button>
-                              
-                            </div>
+                        <div class="col-sm-offset-2 col-sm-10">
+                          <button type="submit" class="btn btn-light">Submit</button>
+                        </div>
                       </div>
                     </form>
                 </div>
                 </div>
 
             </div>
-         
-    </div>        
-
+        
+    
+       <!--Fixed Back to Top Button -->
+       
+        <div class="top_btn">
+            <a href="#nav"><button class="top-btn"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></button></a>
+        </div>
         <!--Footer-->
         
         <footer>
@@ -342,7 +356,7 @@
                 </div> 
             </div>
         </footer>
-            
+        </div>    
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
         <script src="assets/js/map.js"></script>

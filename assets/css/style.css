@@ -89,10 +89,10 @@ h6 {
 
 @keyframes nudge {
   0% {
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
   100% {
-    transform: translateX(10px);
+    transform: translateY(-10px);
   }
 }
 
@@ -123,7 +123,7 @@ h6 {
 }
 
 
-#inspiration {
+#inspiration, #mapFind {
   padding: 3em 1em 3em 1em;
   text-align: center;
   background-color: #F7F6F4;
@@ -218,6 +218,7 @@ h6 {
 #amsterdam {
   border-top: 1px solid black;
 }
+
 
 /*General*/
 
@@ -347,7 +348,7 @@ h6 {
 
 #map-area {
   padding: 0;
-  margin: 0;
+  margin: 0px 0px 30px 0px;
 }
 
 #map {
@@ -358,7 +359,7 @@ h6 {
 /*.......................................Booking Form*/
 
 .booking-img {
-  background-image: url("../images/cityplane.jpg");
+  background-image: url("../images/city-book.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 400px;
@@ -373,13 +374,13 @@ h6 {
 }
 
 .book_box {
-  background-color: #F7F6F4;
-  width: 300px;
-  height: 200px;
-  position: relative;
-  top: 40px;
-  border: 1px solid black;
-  margin: 0 auto;
+    background-color: #F7F6F4;
+    width: 250px;
+    height: 200px;
+    position: relative;
+    top: 25px;
+    border: 1px solid black;
+    margin: 0 auto;
 
 }
 
@@ -396,15 +397,23 @@ h6 {
   padding: 30px;
 }
 
+.top_btn {
+     margin: 0;
+    bottom: 90px;
+    left: 80%;
+    position: fixed;
+    width: 100%;
+    z-index: 2
+ 
+}
+
 .top-btn {
   padding: 5px;
   background-color: #fff;
   color: #1E1D18;
-  border: 1px solid #cd5360;    
-  position: relative;
-  bottom: 130px;
-  left: 210px;
-
+  border: 1px solid #cd5360;
+  height: 45px;
+  width: 50px;
 }
 
 .top-btn:hover {
@@ -500,5 +509,9 @@ footer {
   
   #search {
     height: 50vh
+  }
+  
+  .top_btn {
+    left: 90%;
   }
 }
