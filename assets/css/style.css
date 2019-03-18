@@ -1,6 +1,7 @@
 body {
   font-family: 'Lora', serif;
   font-size: 1.5em;
+  overflow-x: hidden !important;
 }
 
 .container-fluid {
@@ -250,30 +251,17 @@ h6 {
 
 #search {
   text-align: center;
-  background-color: #BDCADA;
-  padding: 20px;
   height: 25vh;
   background-image: url(../images/book.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 
 #country {
-  width: 200px;
   margin-top: 20px;
-  background-color: #fff;
 }
 
-#locationInput {
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-}
-
-#locationInput input {
-  padding: 10px;
-  width: 200px;
-}
 
 .find-me {
   padding: 25px 10px 20px 10px;
@@ -366,7 +354,7 @@ textarea {
   overflow: auto;
 }
 
-form {
+#form {
   padding: 35px;
   margin: 50px 0;
   background: rgb(255, 255, 255, 0.8)
@@ -385,7 +373,7 @@ textarea {
   border-bottom: solid 2px #1E1D18;
   font-weight: 400;
   letter-spacing: 1px;
-  margin: 0em 0 2em 0;
+  margin: 1em 0 2em 0;
   padding: 0 0 1em 0;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -574,10 +562,6 @@ footer {
     padding: 25px 15px 25px 25px;
   }
 
-  #inputName {
-    margin-top: 20px;
-  }
-
 }
 
 @media (min-width: 1274px) {
@@ -585,6 +569,11 @@ footer {
   #search {
     height: 50vh;
   }
+  
+  #places {
+  padding-right: 15px;
+  padding-left: 30px;
+}
 
   .top_btn {
     left: 90%;

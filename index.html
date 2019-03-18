@@ -168,30 +168,35 @@
                     <div class="animation_here"></div>
                 </div>
             </div>
+           
 
             <!-- Search Options for Map -->
-
+            
             <div class="row">
                 <div id="places" class="col-xs-12 col-lg-4">
                     <div id="search">
 
-                        <!-- Country Selection -->
+                        <form id="searchForm">
+                           <!-- Country Selection -->
+                            <div class=" row form-group">
+                                <div class="custom-select col-xs-6 col-xs-offset-3" id="controls">
+                                    <select class="form-control" id="country">
+                                        <option value = "all" selected>All</option>
+                                        <option value = "us">USA</option>
+                                        <option value = "nl">Netherlands</option>
+                                        <option value = "uk">UK</option>
+                                        <option value = "fr">France</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Search box for entering a location -->
+                            <div class="row">
+                                <div class="form-group col-xs-6 col-xs-offset-3" id="locationInput">
+                                    <input class="form-control" id="autocomplete" placeholder="Enter location" type="text" />
+                                </div>
+                            </div>
+                        </form>
 
-                        <div class="custom-select" id="controls">
-                            <select id="country">
-                                <option value = "all" selected>All</option>
-                                <option value = "us">USA</option>
-                                <option value = "nl">Netherlands</option>
-                                <option value = "uk">UK</option>
-                                <option value = "fr">France</option>
-                            </select>
-                        </div>
-
-                        <!-- Search box for entering a location -->
-
-                        <div id="locationInput">
-                            <input id="autocomplete" placeholder="Enter location" type="text" />
-                        </div>
                     </div>
 
                     <div class="find-me">
@@ -275,37 +280,37 @@
 
         <!--Booking Form-->
 
-        <div class="row">
+        <div class="form-horizontal">
             <div id="book" class="col-xs-12 booking-img">
                 <div class="col-xs-12 col-sm-10 col-sm-offset-1 form_box">
-                    <form id="form" onsubmit="return sendEmail(this);" method="POST" class="form-horizontal">
+                    <form id="form" onsubmit="return sendEmail(this);" method="POST">
                         <div class="form-group">
-                            <label for="name" class="col-sm-2 control-label"></label>
-                            <div class="col-sm-offset-1 col-sm-10">
-                                <input type="text" id="inputName" name="name" placeholder="Name" required>
+                            <label for="name" class="col-sm-1">Name </label>
+                            <div class="col-sm-10 col-sm-offset-1 col-md-offset-0">
+                                <input class="form-control" type="text" id="inputName" name="name" placeholder="Name" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="email" class="col-sm-2 control-label"></label>
-                            <div class="col-sm-offset-1 col-sm-10">
-                                <input type="email" id="inputEmail" name="emailaddress" placeholder="Email" required>
+                            <label for="email" class="col-sm-1">Email </label>
+                            <div class="col-sm-10 col-sm-offset-1 col-md-offset-0">
+                                <input class="form-control" type="email" id="inputEmail" name="emailaddress" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-sm-offset-1 col-sm-10 country">
-                                <label for="country" class="col-sm-2 control-label"></label>
+                            <label for="country" class="col-sm-1"> Country</label>
+                            <div class="col-sm-10 col-sm-offset-1 col-md-offset-0 country">
                                 <select placeholder="Country" name="country" id="country_input" required>
-                            <option disabled hidden selected>Country I'm interested in</option>
-                            <option>USA</option>
-                            <option>UK</option>
-                            <option>France</option>
-                            <option>Netherlands</option>
-                          </select>
+                                    <option disabled hidden selected>Country I'm interested in</option>
+                                    <option>USA</option>
+                                    <option>UK</option>
+                                    <option>France</option>
+                                    <option>Netherlands</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-sm-offset-1 col-sm-10 message">
-                                <label for="message" class="col-sm-2 control-label"></label>
+                            <label for="message" class="col-sm-1">Details </label>
+                            <div class="col-sm-10 col-sm-offset-1 col-md-offset-0 message">
                                 <textarea name="citybreaksummary" placeholder="Tell us which city you want to book and some details about your trip and we'll get back to you with some quotes..." id="message_input" cols="30" rows="5" required></textarea>
                             </div>
                         </div>
