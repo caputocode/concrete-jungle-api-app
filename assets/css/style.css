@@ -526,6 +526,10 @@ textarea {
   padding: 3px;
 }
 
+/*stops btn showing on page load*/ 
+#toTop {
+  display: none;
+}
 
 /*.........................................Footer */
 
