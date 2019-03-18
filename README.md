@@ -62,15 +62,14 @@ EmailJS - Used to link site with an email registered to myself which informs me 
 ## Testing
 
 Testing of this website was carried out using Google chrome dev tools to ensure site was appropriate for all screen sizes.
-
-The search feature of the website was tested extensively by repetition when the website was run locally. 
+To ensure navigation successful, click on each heading in the nav to make sure user is navigated to the correct part of the site.
+The search feature in the map section of the website was tested extensively by repetition when the website was run locally. 
 This ensures the correct part of the world is shown on the map depending on the users Country choice.
 Autocomplete function was tested by entering text into input field. Dropdown menu successfully appears with appropriate cities within chosen country.
 The functionality to implement a working search for google maps was tested by checking radio buttons were tested manually to ensure that the correct markers are displayed when the correct input amenity is ticked.
 
 Test emails were used using EmailJS to ensure working functionality for the booking form. Emails were accessed by myself to ensure succesful sending.
 Required tags were added to ensure the user cannot submit form without relevant information. 
-
 
 
 
@@ -83,7 +82,8 @@ This project has been deployed on GitHub Pages and can be accessed <a href="http
 
 I spent a while trying to enable the following functions.
 Stack Overflow was extremely useful in helping with these problems.
-I had inspiration for my booking form from codepen
+I had inspiration for my booking form from codepen and the use of W3 schools website helped with re styling the radio buttons
+on the google map section. 
 
 
 ## Content
@@ -91,7 +91,9 @@ I had inspiration for my booking form from codepen
 Google Map/Places was used to provide JS code for the map. 
 
 ## Media
+
 The photos used in this site were obtained from Unsplash and Pexel websites which provide free to use images. 
 
 ## Acknowledgements
+
 I received inspiration for this project from voyage prive 
