@@ -141,7 +141,7 @@ h6 {
 }
 
 .paris:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /*New York*/
@@ -162,7 +162,7 @@ h6 {
 }
 
 .ny:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 
 }
 
@@ -180,7 +180,7 @@ h6 {
 }
 
 .london:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 
 }
 
@@ -212,7 +212,7 @@ h6 {
 }
 
 .am:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 #amsterdam {
