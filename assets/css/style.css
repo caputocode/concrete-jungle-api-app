@@ -76,29 +76,6 @@ h6 {
   padding: 0 3em 2em 3em;
 }
 
-.icons {
-  font-size: 24px;
-  color: #C52D28;
-}
-
-.icons i:hover {
-  animation: nudge .5s linear alternate;
-
-}
-
-.icons i {
-  padding-top: 20px;
-  padding-right: 20px;
-}
-
-@keyframes nudge {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
 
 /*....................................Inspiration section*/
 
