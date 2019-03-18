@@ -34,8 +34,8 @@ This has been achieved by the use of images and well known quotes.
 Find a trip - In order for the user to be able to search for a city break, google maps/places has been implemented in order to 
 provide users with the ability to search (in a restricted number of countries) for a desired city. Once the user has selected their chosen city 
 the map successfully zooms in on the centre of the city and results in hotel markers. The user then has the option to change which amenity they would
-like to search for. A function to change the default marker once the input field has text inputted (by user) has been added so that for example 
-cafes may show first.
+like to search for. A function to change the default marker once the input field has text inputted (by user) has been added so that, for example 
+cafes would show first.
 
 Book section - the bottom of the web page displays a section where the user can register interest in a city break. EmailJS has been used so that
 this functionality works and any submissions come through to an email address I can access. Javascript was used to clear the form upon successful 
@@ -66,7 +66,7 @@ To ensure navigation successful, click on each heading in the nav to make sure u
 The search feature in the map section of the website was tested extensively by repetition when the website was run locally. 
 This ensures the correct part of the world is shown on the map depending on the users Country choice.
 Autocomplete function was tested by entering text into input field. Dropdown menu successfully appears with appropriate cities within chosen country.
-The functionality to implement a working search for google maps was tested by checking radio buttons were tested manually to ensure that the correct markers are displayed when the correct input amenity is ticked.
+The functionality to implement a working search for google maps was tested by selecting radio buttons manually to ensure that the correct markers are displayed when the correct input amenity is ticked.
 
 Test emails were used using EmailJS to ensure working functionality for the booking form. Emails were accessed by myself to ensure succesful sending.
 Required tags were added to ensure the user cannot submit form without relevant information. 
@@ -80,9 +80,13 @@ This project has been deployed on GitHub Pages and can be accessed <a href="http
 
 ## Credits
 
-I spent a while trying to enable the following functions.
-Stack Overflow was extremely useful in helping with these problems.
-I had inspiration for my booking form from codepen and the use of W3 schools website helped with re styling the radio buttons
+I spent a while trying to enable the following functions:
+1. Clearing the markers after another country is selected.
+2. Emptying the location field when a new country is selected.
+3. Disabling the radio buttons if the input field is empty.
+Stack Overflow was extremely useful in helping with these problems and provided me with the help I needed for the functions to work successfully.
+
+I had inspiration for my booking form from codepen and the use of W3Schools website helped with re styling the radio buttons
 on the google map section. 
 
 
