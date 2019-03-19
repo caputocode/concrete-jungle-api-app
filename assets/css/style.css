@@ -183,17 +183,11 @@ h6 {
 
 /*New York*/
 
-#ny {
-  border-top: 1px solid black;
-}
-
-
 .ny {
   background-image: url("../images/newyork.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 400px;
-  margin-bottom: 20px;
   transition: all 0.3s;
   -moz-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
@@ -215,7 +209,6 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 400px;
-  margin-bottom: 20px;
   transition: all 0.3s;
   -moz-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
@@ -232,14 +225,10 @@ h6 {
   margin-top: 20px;
   padding-top: 20px;
   color: #fff;
-  border-top: 1px solid black;
   position: relative;
   top: -40px;
 }
 
-.border-london {
-  padding-top: 20px;
-}
 
 /*Amsterdam*/
 
@@ -259,10 +248,6 @@ h6 {
 
 .am:hover {
   transform: scale(1.05);
-}
-
-#amsterdam {
-  border-top: 1px solid black;
 }
 
 
@@ -601,17 +586,6 @@ footer {
 
   #search {
     height: 50vh;
-  }
-
-  .border-london,
-  .london-city-quote,
-  #amsterdam,
-  #ny {
-    border: none;
-  }
-
-  .border-london {
-    padding-top: 0;
   }
 
   .ny,
