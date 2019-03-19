@@ -219,15 +219,6 @@ h6 {
 
 }
 
-.london-city-quote {
-  padding-left: 10px;
-  margin-top: 20px;
-  padding-top: 20px;
-  color: #fff;
-  position: relative;
-  top: -40px;
-}
-
 
 /*Amsterdam*/
 
@@ -584,6 +575,11 @@ footer {
 
   #topFormRow {
     margin-top: 20px;
+  }
+  
+  
+  .labels {
+    top: 12px;
   }
 
   .footer-text {
