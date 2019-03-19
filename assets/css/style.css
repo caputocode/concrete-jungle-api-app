@@ -42,18 +42,17 @@ h6 {
 
 }
 
+.navbar-nav>li>a {
+  padding: 10px;
+}
+
 .navbar-default .navbar-nav>li>a {
   color: #000;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  color: #fff;
-}
-
-.navbar_headings:hover {
   background: #1E1D18;
   color: #fff;
-  cursor: pointer;
 }
 
 .navbar-toggle {
@@ -375,6 +374,11 @@ h6 {
 
 /*.......................................Booking Form*/
 
+#formSection {
+  margin: 0;
+}
+
+
 button {
   overflow: visible;
 }
@@ -396,8 +400,8 @@ textarea {
 
 #inputName,
 #inputEmail,
-#country_input,
-textarea {
+#country_input, #message_input
+ {
   background: none;
   border: none;
   border-bottom: solid 2px #1E1D18;
@@ -406,6 +410,7 @@ textarea {
   margin: 1em 0 2em 0;
   padding: 0 0 1em 0;
   width: 100%;
+   box-shadow: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -426,32 +431,11 @@ textarea {
 }
 
 
+
 textarea {
   line-height: 150%;
   height: 150px;
   resize: none;
-  color: #1E1D18
-}
-
-::-webkit-input-placeholder {
-  color: #000;
-  opacity: 1;
-
-}
-
-:-moz-placeholder {
-  color: #000;
-  opacity: 1;
-}
-
-::-moz-placeholder {
-  color: #000;
-  opacity: 1;
-}
-
-:-ms-input-placeholder {
-  color: #000;
-  opacity: 1;
 }
 
 #form_button {
@@ -579,9 +563,14 @@ footer {
   }
 
   .navbar_headings {
-    padding: 10px 0;
+    padding: 0;
     text-align: center;
 
+  }
+  
+  .navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   #search {
