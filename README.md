@@ -68,6 +68,7 @@ This ensures the correct part of the world is shown on the map depending on the 
 Autocomplete function was tested by entering text into input field. Dropdown menu successfully appears with appropriate cities within chosen country.
 The functionality to implement a working search for google maps was tested by selecting radio buttons manually to ensure that the correct markers are displayed when the correct input amenity is ticked.
 
+Javascript code was passed through JShint with no major issues.
 Test emails were used using EmailJS to ensure working functionality for the booking form. Emails were accessed by myself to ensure succesful sending.
 Required tags were added to ensure the user cannot submit form without relevant information. 
 
@@ -89,6 +90,8 @@ Stack Overflow was extremely useful in helping with these problems and provided 
 I had inspiration for my booking form from codepen and the use of W3Schools website helped with re styling the radio buttons
 on the google map section. 
 
+I also thank my tutor Maranatha for his useful tips and review of the project. 
+
 
 ## Content
 
@@ -100,4 +103,4 @@ The photos used in this site were obtained from Unsplash and Pexel websites whic
 
 ## Acknowledgements
 
-I received inspiration for this project from voyage prive 
+I received inspiration for this project from voyage prive and Lonely Planet websites. 
