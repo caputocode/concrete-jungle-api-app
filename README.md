@@ -69,6 +69,7 @@ Autocomplete function was tested by entering text into input field. Dropdown men
 The functionality to implement a working search for google maps was tested by selecting radio buttons manually to ensure that the correct markers are displayed when the correct input amenity is ticked.
 
 Javascript code was passed through JShint with no major issues.
+
 Test emails were used using EmailJS to ensure working functionality for the booking form. Emails were accessed by myself to ensure succesful sending.
 Required tags were added to ensure the user cannot submit form without relevant information. 
 
