@@ -89,6 +89,8 @@ h6 {
   transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
   -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+
 }
 
 .headings {
@@ -155,7 +157,7 @@ h6 {
 
 #inspiration,
 #mapFind {
-  padding: 3em 1em 3em 1em;
+  padding: 2em 1em 2em 1em;
   text-align: center;
   background-color: #F7F6F4;
 }
@@ -170,6 +172,9 @@ h6 {
   background-size: cover;
   min-height: 400px;
   transition: all 0.3s;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
 }
 
 .paris:hover {
@@ -190,6 +195,9 @@ h6 {
   min-height: 400px;
   margin-bottom: 20px;
   transition: all 0.3s;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
 
 }
 
@@ -209,6 +217,9 @@ h6 {
   min-height: 400px;
   margin-bottom: 20px;
   transition: all 0.3s;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
 }
 
 .london:hover {
@@ -240,6 +251,9 @@ h6 {
   background-size: cover;
   min-height: 400px;
   transition: all 0.3s;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
 
 }
 
@@ -388,7 +402,7 @@ textarea {
 #form {
   padding: 35px;
   margin: 50px 0;
-  background: rgb(255, 255, 255, 0.8)
+  background: rgb(255, 255, 255, 0.8);
 }
 
 .submit {
@@ -436,6 +450,7 @@ textarea {
 
 ::-webkit-input-placeholder {
   color: #000;
+  opacity: 1;
 
 }
 
@@ -451,6 +466,7 @@ textarea {
 
 :-ms-input-placeholder {
   color: #000;
+  opacity: 1;
 }
 
 #form_button {
@@ -481,6 +497,9 @@ textarea {
   background-size: cover;
   min-height: 400px;
   transition: all 0.3s;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
 }
 
 
@@ -543,7 +562,10 @@ footer {
 
 .logo {
   padding: 25px 15px 0 15px;
+}
 
+.logo>h5>a {
+  color: #000;
 }
 
 .icon-style i {
