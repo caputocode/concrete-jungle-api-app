@@ -48,7 +48,8 @@ submission, along with an alert to inform user information has been sent success
 # Features Left to Implement
 
 Another feature to consider implementing would be the ability for users to use a check box system with google maps so that multiple amenities can be seen
-at the same time/filtered out with the use of different markers for each amenity.  
+at the same time/filtered out with the use of different markers for each amenity. 
+The addition of a travel blog could be considered. 
 
 
 ## Technologies Used
@@ -56,7 +57,7 @@ at the same time/filtered out with the use of different markers for each amenity
 HTML - used to build the foundation of the website
 CSS - used extensively to provide style and animation to the website. 
 Bootstrap - to provide a responsive grid system layout.
-Javascript - used to render Google map and in addition to provides functions to clear the markers, separate amenities such as hotel, cafe etc
+Javascript - used to render Google map and in addition to provides functions to clear the markers, separate amenities such as hotel, cafe etc. Also used to clear form after user submits.
 JQuery - This was used in addition to the core JS provided by Google Maps. JQuery allowed me to ensure markers disappeared after user selects a new country for example.
 Google Map/Places API platform
 EmailJS - Used to link site with an email registered to myself which informs me of interest in the project (hypothetical city break enquiry)
@@ -66,16 +67,27 @@ EmailJS - Used to link site with an email registered to myself which informs me 
 
 Testing of this website was carried out using Google chrome dev tools to ensure site was appropriate for all screen sizes.
 To ensure navigation successful, click on each heading in the nav to make sure user is navigated to the correct part of the site.
+
+I came across an issue with the order of my images in mobile view as I wanted the images to alternate left to right on web view. This meant
+the images and city info did not follow on very well in mobile view. With research I used bootstrap push/pull to move these images in to the 
+correct order in mobile view. 
+
 The search feature in the map section of the website was tested extensively by repetition when the website was run locally. 
 This ensures the correct part of the world is shown on the map depending on the users Country choice.
 Autocomplete function was tested by entering text into input field. Dropdown menu successfully appears with appropriate cities within chosen country.
 The functionality to implement a working search for google maps was tested by selecting radio buttons manually to ensure that the correct markers are displayed when the correct input amenity is ticked.
 
+HTML code was passed through W3C Validator which picked up a few errors including:
+1. No empty value property on the select tag (booking form) - fixed.
+2. An <a> tag with use of button instead of just using the one - fixed.
+3. Google font character | not allowed - replaced with %7C, fixed.
+4. <labels> on booking form did not have matching id to form control - fixed.
+
+CSS code was passed through W3C Validator with no errors found. 
 Javascript code was passed through JShint with no major issues.
 
 Test emails were used using EmailJS to ensure working functionality for the booking form. Emails were accessed by myself to ensure succesful sending.
 Required tags were added to ensure the user cannot submit form without relevant information. 
-
 
 
 ## Deployment
@@ -101,9 +113,11 @@ I also thank my tutor Maranatha for his useful tips and review of the project.
 
 Google Map/Places was used to provide JS code for the map. 
 
+
 ## Media
 
-The photos used in this site were obtained from Unsplash and Pexel websites which provide free to use images. 
+The photos used in this site were obtained from <a href="https://unsplash.com/">Unsplash</a> and <a href="https://www.pexels.com/">Pexels</a> websites which provide free to use images. 
+
 
 ## Acknowledgements
 

@@ -88,12 +88,10 @@ h6 {
 }
 
 .top-btn {
-  padding: 5px;
   background-color: #fff;
   color: #1E1D18;
   border: 1px solid #cd5360;
-  height: 45px;
-  width: 50px;
+  padding: 10px;
 }
 
 .top-btn:hover {
