@@ -3,29 +3,32 @@
 ## Overview
 
 This single page project has been designed for users looking for a travel website.
-The Concrete Jungle City Break App is a ficticious web application providing city break inspiration through images and descriptions
+The Concrete Jungle City Break App is a fictional web application providing city break inspiration through images and descriptions
 and enables users to search for amenities within a range of cities using the Google maps/places API.
 
 
 ## UX
 
 The project has been designed with simplicity and sleekness in mind. Users are able to navigate straight away
-to their chosen section of the web page using the navbar. There is a fixed 'back to top' button to provide ease of navigation for the user.
+to their chosen section of the web page using the navbar. There is a fixed 'back to top' button to provide ease of navigation for the user at all times. 
 
 As a user I want to be informed of the purpose of the site and so I designed the website with captivating title and image in order to entice the user. 
-As a user I want a clear layout of the website providing easy navigation throughout the site. This was achieved with a linked navbar directing the user to different sections of the web app.
+
+As a user I want a clear layout of the website providing easy navigation throughout the site. This was achieved with a linked navbar directing the user to different sections of the web app. 
+In addition a fixed back-to-top button has been implemented and this has been designed to 'hide' on page load/re-load and when the user is at top of the page. 
+
 Inspiration for holidays is an important part of user experience. By the use of images and famous city quotes, I aimed to create a section describing and ultimately selling the idea of visiting exciting cities.
 A major part of this project was the use of Google Maps/Places. As a user I want to be able to search for amenities in a particular city. I limited the country selection to USA, Netherlands, UK and France for this project.
 This was in part due to an interest from myself, but also to be able to feature popular ciites such as Amsterdam, New York, Paris and London.
+
 As a user I also want to be able to register interest in booking a city break. I enabled this function with the use of a form at the bottom of the app, linked up successfully with EmailJS.
-There are social media icons evident in both the main page and the footer, which promotes the company across a range of platforms important in todays market.
+There are social media icons evident in the footer, which promotes the company across a range of platforms important in todays market.
 
 Wireframes can be found in the wireframes folder.
 
 ## Features
 
 About section - directs user to the About Us section where a description of the company is provided. Gives user an overview of what the website can provide.
-There are (ficticious) links to social media in this section to promote the company.
 
 Inspiration section - this section gives the user an opportunity for inspiration when considering which city to book. 
 The section has been designed to captivate users and encourage excitement at the thought of booking a trip with Concrete Jungle. 

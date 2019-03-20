@@ -1,403 +1,375 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!--Bootstrap css-->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300, 900" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.0/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300, 900" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.0/css/hover-min.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     
-    <!--Email JS-->
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("user_ugQ2XXnYPTZuQ0NrGsrHf");
-        })();
-    </script>
-</head>
+        <!--Email JS-->
+        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("user_ugQ2XXnYPTZuQ0NrGsrHf");
+            })();
+        </script>
+    </head>
 
-<body>
-
-    <div class="container-fluid">
-
-        <!-- Header -->
-
-        <header>
-            <div class="row">
-                <div id="cityscape" class="col-xs-12">
-                    <div class="headings">
-                        <h1><em>Discover Something New</em></h1>
-                        <h4>Find your next City Break</h4>
-                    </div>
-                </div>
-            </div>
-             <nav id="nav" class="navbar navbar-default">
-              <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                </div>
-            
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                 <ul class="nav navbar-nav">
-                    <li class="navbar_headings"><a href="#places">find a trip</a></li>
-                    <li class="navbar_headings"><a href="#about-us">about us</a></li>
-                    <li class="navbar_headings"><a href="#inspiration">inspiration</a></li>
-                    <li class="navbar_headings"><a href="#book">book</a></li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-
-            <!--Navbar -->
-
-            <!--  <nav id="nav" class="nav">-->
-            <!--      <div class="navbar-header">-->
-            <!--           <button type="button" class="navbar-toggle collapsed toggle_btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
-            <!--            <span class="sr-only">Toggle navigation</span>-->
-            <!--            <span class="icon-bar"></span>-->
-            <!--            <span class="icon-bar"></span>-->
-            <!--            <span class="icon-bar"></span>-->
-            <!--          </button>-->
-            <!--      </div>-->
-            <!--        <div class="navbar navbar-nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
-            <!--            <a href="#places">-->
-            <!--                <div class="col-xs-3 col-md-2 col-md-offset-2">-->
-            <!--                    <span><p class="nav-headings">Find a trip</p></span>-->
-            <!--                </div>-->
-            <!--            </a>-->
-            <!--            <a href="#about-us">-->
-            <!--                <div class="col-xs-3 col-md-2 nav">-->
-            <!--                    <span><p class="nav-headings">About</p></span>-->
-            <!--                </div>-->
-            <!--            </a>-->
-            <!--            <a href="#inspiration">-->
-            <!--                <div class="col-xs-3 col-md-2 nav">-->
-            <!--                    <span><p class="nav-headings">Inspiration</p></span>-->
-            <!--                </div>-->
-            <!--            </a>-->
-            <!--            <a href="#book">-->
-            <!--                <div class="col-xs-3 col-md-2 nav">-->
-            <!--                    <span><p class="nav-headings">Book</p></span>-->
-            <!--                </div>-->
-            <!--            </a>-->
-            <!--        </div>-->
-            
-            <!--</nav>-->
-        </header>
-
-
-        <!--About Us Section  -->
-
-        <section>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div id="about-us">
-                        <h1 class="main-title">Concrete Jungle</h1>
-                        <h3>Book your trip now with Concrete Jungle Holidays</h3>
-                        <p>We strive to make sure you have the tools to make the most of your city break. Check out our featured cities below to find the inspiration you need! Don't forget use our map finder feature to search for the best bars, food and
-                            culture. If you've found your perfect break then drop us an email and we can get planning your Concrete Jungle holiday!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!--Inspiration Section-->
-
-        <section>
-            <div id="inspiration" class="row">
-                <div class="col-xs-2 animation">
-                    <div class="animation_here"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
-                </div>
-                <div class="col-xs-8">
-                    <h3>Need some Inspiration for your trips?</h3>
-                    <p>Check out our featured cities below for some ideas on which city to explore next.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4 paris">
-                    <div class="city-quote">
-                        <h4>"Paris is always a good idea"</h4>
-                        <p><em>Audrey Hepburn</em></p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-8">
-                    <div class="city-info">
-                        <h2 class="paris-title">Paris</h2>
-                        <p>Paris offers some wonderful sights and is hailed one of the most romantic cities on earth. Not just for lovers though you'll find plenty of food, good wines and enough museums and art to satisfy your cultural side.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-8 col-md-push-4 ny">
-                    <div class="city-quote">
-                        <h4>"There is something in the New York air that makes sleep useless.”</h4>
-                        <p><em>Simone de Beauvoir</em></p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-4 col-md-pull-8">
-                    <div id="ny" class="city-info">
-                        <h2 class="ny-title">New York</h2>
-                        <p>The city that never sleeps. Lose yourself in the vibrant city of New York. A city full of life, music, food, and art.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4 london">
-                   <div class="city-quote">
-                       <h4>"When a man is tired of London, he is tired of life; for there is in London all that life can afford."</h4>
-                       <p><em>Samuel Johnson</em></p>
-                   </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-8">
-                    <div class="city-info">
-                        <h2 class="london-title">London</h2>
-                        <p>London town! For a taste of British history and culture look no further than London. This city has much to offer no matter what sort of trip you have in mind.
-                        Rich in foodie delights, museums and art galleries there truly is something for everyone.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-8 col-md-push-4 am">
-                    <div class="city-quote">
-                        <h4>“Some tourists think Amsterdam is a city of sin, but in truth it is a city of freedom. And in freedom, most people find sin.”</h4>
-                        <p><em>John Green, The Fault in Our Stars</em></p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-4 col-md-pull-8">
-                    <div id="amsterdam" class="city-info">
-                        <h2 class="am-title">Amsterdam</h2>
-                        <p>A city on the canal. Get your feet moving in this city either by foot or, if you want to look the part, bike rental is high on people's list. Explore the wonderful cafes and buzzing foodie scene.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--MAP -->
-
-        <section>
-            <div id="mapFind" class="row">
-                <div class="col-xs-2 animation">
-                    <div class="animation_here"></div>
-                </div>
-                <div class="col-xs-8">
-                    <h3>Search our recommended countries for your city break</h3>
-                    <p>Use the map below to explore your city. Find the best hotels, restaurants and more below.</p>
-                </div>
-                <div class="col-xs-2 animation">
-                    <div class="animation_here"></div>
-                </div>
-            </div>
-           
-
-            <!-- Search Options for Map -->
-            
-            <div class="row">
-                <div id="places" class="col-xs-12 col-lg-4">
-                    <div id="search">
-
-                        <form id="searchForm">
-                           <!-- Country Selection -->
-                            <div class=" row form-group">
-                                <div class="custom-select col-xs-6 col-xs-offset-3" id="controls">
-                                    <select class="form-control" id="country">
-                                        <option value = "all" selected>All</option>
-                                        <option value = "us">USA</option>
-                                        <option value = "nl">Netherlands</option>
-                                        <option value = "uk">UK</option>
-                                        <option value = "fr">France</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- Search box for entering a location -->
-                            <div class="row">
-                                <div class="form-group col-xs-6 col-xs-offset-3" id="locationInput">
-                                    <input class="form-control" id="autocomplete" placeholder="Enter location" type="text" />
-                                </div>
-                            </div>
-                        </form>
-
-                    </div>
-
-                    <div class="find-me">
-                        <span class="hidden-xs">Find Me: </span>
-                    </div>
-                    <div class="markers">
-                        <label class="radio" for="lodging">Hotels
-                            <input onchange="search()" type="radio" id="lodging" name="option" checked="checked" disabled />
-                            <span class="selected"></span>
-                        </label>
-
-                        <label class="radio" for="restaurant">Restaurants                    
-                            <input onchange="search()" type="radio" id="restaurant" name="option" disabled />
-                            <span class="selected"></span>
-                        </label>
-
-                        <label class="radio" for="bar">Bars                    
-                            <input onchange="search()" type="radio" id="bar" name="option" disabled />
-                            <span class="selected"></span>
-                        </label>
-
-                        <label class="radio" for="art_gallery">Art Gallery
-                            <input onchange="search()" type="radio" id="art_gallery" name="option" disabled />
-                            <span class="selected"></span>
-                        </label>
-
-                        <label class="radio" for="shopping_mall">Shopping
-                            <input onchange="search()" type="radio" id="shopping_mall" name="option" disabled />
-                            <span class="selected"></span>
-                        </label>
-                    </div>
-                </div>
-
-                <!-- Map -->
-
-                <div id="map-area" class="col-xs-12 col-lg-8">
-                    <div id="map"></div>
-                </div>
-            </div>
-
-
-            <!-- Search Results Table -->
-            <div class="row">
-                <div class="hidden" id="listing">
-                    <table id="resultsTable">
-                        <tbody id="results"></tbody>
-                    </table>
-                </div>
-            </div>
-
-
-            <!-- Info Window -->
-
-            <div style="display: none">
-                <div id="info-window">
-                    <table>
-                        <tr id="iw-url-row" class="iw_table_row">
-                            <td id="iw-icon" class="iw_table_icon"></td>
-                            <td id="iw-url"></td>
-                        </tr>
-                        <tr id="iw-address-row" class="iw_table_row">
-                            <td class="iw_attribute_name">Address:</td>
-                            <td id="iw-address"></td>
-                        </tr>
-                        <tr id="iw-phone-row" class="iw_table_row">
-                            <td class="iw_attribute_name">Telephone:</td>
-                            <td id="iw-phone"></td>
-                        </tr>
-                        <tr id="iw-rating-row" class="iw_table_row">
-                            <td class="iw_attribute_name">Rating:</td>
-                            <td id="iw-rating"></td>
-                        </tr>
-                        <tr id="iw-website-row" class="iw_table_row">
-                            <td class="iw_attribute_name">Website:</td>
-                            <td id="iw-website"></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <!--Booking Form-->
-
-        <div id="formSection" class="form-horizontal">
-            <div id="book" class="col-xs-12 booking-img">
-                <div class="col-xs-12 col-sm-10 col-sm-offset-1 form_box">
-                    <form id="form" onsubmit="return sendEmail(this);" method="POST">
-                        <div id="topFormRow" class="form-group">
-                            <label for="name" class="col-sm-1 labels">Name </label>
-                            <div class="col-sm-10 col-sm-offset-1 col-md-offset-0">
-                                <input class="form-control" type="text" id="inputName" name="name" placeholder="Name" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="col-sm-1 labels">Email </label>
-                            <div class="col-sm-10 col-sm-offset-1 col-md-offset-0">
-                                <input class="form-control" type="email" id="inputEmail" name="emailaddress" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="country" class="col-sm-1 labels"> Country</label>
-                            <div class="col-sm-10 col-sm-offset-1 col-md-offset-0 country">
-                                <select placeholder="Country" name="country" class="form-control" id="country_input" required>
-                                    <option disabled hidden selected>Country I'm interested in</option>
-                                    <option>USA</option>
-                                    <option>UK</option>
-                                    <option>France</option>
-                                    <option>Netherlands</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="col-sm-1 labels">Details </label>
-                            <div class="col-sm-10 col-sm-offset-1 col-md-offset-0 message">
-                                <textarea class="form-control" name="citybreaksummary" placeholder="Tell us which city you want to book and some details about your trip and we'll get back to you with some quotes..." id="message_input" cols="30" rows="5" required></textarea>
-                            </div>
-                        </div>
-                        <div class="submit">
-                            <input type="submit" value="Send Message" id="form_button" />
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <!--Fixed Back to Top Button -->
-
-        <div id="toTop" class="top_btn">
-            <a href="#nav"><button class="top-btn"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></button></a>
-        </div>
-
-        <!--Footer-->
-
-        <footer>
-            <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <div class="logo">
-                       <h5><a href="#nav">Concrete Jungle Holidays</a></h5>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="footer-icons">
-                        <a href="#"><span class="icon-style"><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
-                        <a href="#"><span class="icon-style"><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
-                        <a href="#"><span class="icon-style"><i class="fa fa-pinterest-p" aria-hidden="true"></i></span></a>
-                        <a href="#"><span class="icon-style"><i class="fa fa-twitter" aria-hidden="true"></i></span></a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="footer-text">
-                        <p>Interactive Frontend Development Milestone Project</p>
-                        <p>Created by Code Institute Bootcamper Heather Caputo</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+    <body>
     
-    <!--Bootstrap JS JQuery-->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
-    <!--custom JS    -->
-    <script src="assets/js/map.js"></script>
-    <script src="assets/js/sendEmail.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <!--google map api -->
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF_dyNMt5EvrxUQ0k3CMWJygiwsmVVCNg&libraries=places&callback=initMap"></script>
-</body>
+        <div class="container-fluid">
+    
+            <!---------- Header ------------->
+    
+            <header>
+                <div class="row">
+                    <div id="cityscape" class="col-xs-12">
+                        <div class="headings">
+                            <h1><em>Discover Something New</em></h1>
+                            <h4>Find your next City Break</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Navbar -->
+    
+                <nav id="nav" class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="navbar_headings"><a href="#places">find a trip</a></li>
+                                <li class="navbar_headings"><a href="#about-us">about us</a></li>
+                                <li class="navbar_headings"><a href="#inspiration">inspiration</a></li>
+                                <li class="navbar_headings"><a href="#book">book</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            
+            
+            <!---------- Main Article ------------->
+    
+            <!--About Us Section  -->
+    
+            <section>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="about-us">
+                            <h1 class="main-title">Concrete Jungle</h1>
+                            <h3>Book your trip now with Concrete Jungle Holidays</h3>
+                            <p>We are a leading luxury travel club, offering unforgettable getaways, at fabulous prices. 
+                            We strive to make sure you have the tools you need to make the most of your city break. Sit back and let 
+                            us do the hard work!<br>Check out our featured cities below to find the inspiration you need! Don't forget use 
+                            our map finder feature to search for the best bars, food and
+                            culture. If you've found your perfect break then drop us an email and we can get planning 
+                            your Concrete Jungle holiday!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!--Inspiration Section-->
+    
+            <section>
+                <div id="inspiration" class="row">
+                    <div class="col-xs-2 animation">
+                        <div class="animation_here"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="col-xs-8">
+                        <h3>Need some Inspiration for your trips?</h3>
+                        <p>Check out our featured cities below for some ideas on which city to explore next.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4 paris">
+                        <div class="city-quote">
+                            <h4>"Paris is always a good idea"</h4>
+                            <p><em>Audrey Hepburn</em></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-8">
+                        <div class="city-info">
+                            <h2 class="paris-title">Paris</h2>
+                            <p>Paris offers some wonderful sights and is hailed one of the most romantic cities on earth. Not just for lovers though you'll find plenty of food, good wines and enough museums and art to satisfy your cultural side.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-8 col-md-push-4 ny">
+                        <div class="city-quote">
+                            <h4>"There is something in the New York air that makes sleep useless.”</h4>
+                            <p><em>Simone de Beauvoir</em></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-4 col-md-pull-8">
+                        <div class="city-info">
+                            <h2 class="ny-title">New York</h2>
+                            <p>The city that never sleeps. Lose yourself in the vibrant city of New York. A city full of life, music, food, and art.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4 london">
+                        <div class="city-quote">
+                            <h4>"When a man is tired of London, he is tired of life; for there is in London all that life can afford."</h4>
+                            <p><em>Samuel Johnson</em></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-8">
+                        <div class="city-info">
+                            <h2 class="london-title">London</h2>
+                            <p>London town! For a taste of British history and culture look no further than London. This city has much to offer no matter what sort of trip you have in mind. Rich in foodie delights, museums and art galleries there truly is something
+                                for everyone.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-8 col-md-push-4 amsterdam">
+                        <div class="city-quote">
+                            <h4>“Some tourists think Amsterdam is a city of sin, but in truth it is a city of freedom. And in freedom, most people find sin.”</h4>
+                            <p><em>John Green, The Fault in Our Stars</em></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-4 col-md-pull-8">
+                        <div id="amsterdam" class="city-info">
+                            <h2 class="am-title">Amsterdam</h2>
+                            <p>A city on the canal. Get your feet moving in this city either by foot or, if you want to look the part, bike rental is high on people's list. Explore the wonderful cafes and buzzing foodie scene.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!--MAP -->
+    
+            <section>
+                <div id="mapFind" class="row">
+                    <div class="col-xs-2 animation">
+                        <div class="animation_here"></div>
+                    </div>
+                    <div class="col-xs-8">
+                        <h3>Search our recommended countries for your city break</h3>
+                        <p>Use the map below to explore your city. Find the best hotels, restaurants and more below.</p>
+                    </div>
+                    <div class="col-xs-2 animation">
+                        <div class="animation_here"></div>
+                    </div>
+                </div>
+    
+    
+                <!-- Search Options for Map -->
+    
+                <div class="row">
+                    <div id="places" class="col-xs-12 col-lg-4">
+                        <div id="search">
+                            <form id="searchForm">
+                                <!-- Country Selection -->
+                                <div class="row form-group">
+                                    <div class="custom-select col-xs-6 col-xs-offset-3" id="controls">
+                                        <select class="form-control" id="country">
+                                            <option value = "all" selected>All</option>
+                                            <option value = "us">USA</option>
+                                            <option value = "nl">Netherlands</option>
+                                            <option value = "uk">UK</option>
+                                            <option value = "fr">France</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Search box for entering a location -->
+                                
+                                <div class="row">
+                                    <div class="form-group col-xs-6 col-xs-offset-3" id="locationInput">
+                                        <input class="form-control" id="autocomplete" placeholder="Enter location" type="text" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <!--Radio Butttons for filtering amenities which are then displayed as markers on map-->
+                        <div class="find-me">
+                            <span class="hidden-xs">Find Me: </span>
+                        </div>
+                        <div class="markers">
+                            <label class="radio" for="lodging">Hotels
+                                <input onchange="search()" type="radio" id="lodging" name="option" checked="checked" disabled />
+                                <span class="selected"></span>
+                            </label>
+    
+                            <label class="radio" for="restaurant">Restaurants                    
+                                <input onchange="search()" type="radio" id="restaurant" name="option" disabled />
+                                <span class="selected"></span>
+                            </label>
+    
+                            <label class="radio" for="bar">Bars                    
+                                <input onchange="search()" type="radio" id="bar" name="option" disabled />
+                                <span class="selected"></span>
+                            </label>
+    
+                            <label class="radio" for="art_gallery">Art Gallery
+                                <input onchange="search()" type="radio" id="art_gallery" name="option" disabled />
+                                <span class="selected"></span>
+                            </label>
+    
+                            <label class="radio" for="shopping_mall">Shopping
+                                <input onchange="search()" type="radio" id="shopping_mall" name="option" disabled />
+                                <span class="selected"></span>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!-- Map -->
+    
+                    <div id="map-area" class="col-xs-12 col-lg-8">
+                        <div id="map"></div>
+                    </div>
+                </div>
+    
+    
+                <!-- Search Results Table (hidden)-->
+                
+                <div class="row">
+                    <div class="hidden" id="listing">
+                        <table id="resultsTable">
+                            <tbody id="results"></tbody>
+                        </table>
+                    </div>
+                </div>
+    
+    
+                <!-- Info Window for markers-->
+    
+                <div style="display: none">
+                    <div id="info-window">
+                        <table>
+                            <tr id="iw-url-row" class="iw_table_row">
+                                <td id="iw-icon" class="iw_table_icon"></td>
+                                <td id="iw-url"></td>
+                            </tr>
+                            <tr id="iw-address-row" class="iw_table_row">
+                                <td class="iw_attribute_name">Address:</td>
+                                <td id="iw-address"></td>
+                            </tr>
+                            <tr id="iw-phone-row" class="iw_table_row">
+                                <td class="iw_attribute_name">Telephone:</td>
+                                <td id="iw-phone"></td>
+                            </tr>
+                            <tr id="iw-rating-row" class="iw_table_row">
+                                <td class="iw_attribute_name">Rating:</td>
+                                <td id="iw-rating"></td>
+                            </tr>
+                            <tr id="iw-website-row" class="iw_table_row">
+                                <td class="iw_attribute_name">Website:</td>
+                                <td id="iw-website"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+    
+            <!--Booking Form-->
+            
+            <section>
+                <div id="formSection" class="form-horizontal">
+                    <div id="book" class="col-xs-12 booking-img">
+                        <div class="col-xs-12 col-sm-10 col-sm-offset-1 form_box">
+                            <form id="form" onsubmit="return sendEmail(this);" method="POST">
+                                <div id="topFormRow" class="form-group">
+                                    <label for="name" class="col-sm-1 labels">Name </label>
+                                    <div class="col-sm-10 col-sm-offset-1 col-md-offset-0">
+                                        <input class="form-control" type="text" id="inputName" name="name" placeholder="Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-1 labels">Email </label>
+                                    <div class="col-sm-10 col-sm-offset-1 col-md-offset-0">
+                                        <input class="form-control" type="email" id="inputEmail" name="emailaddress" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="country" class="col-sm-1 labels"> Country</label>
+                                    <div class="col-sm-10 col-sm-offset-1 col-md-offset-0 country">
+                                        <select placeholder="Country" name="country" class="form-control" id="country_input" required>
+                                            <option disabled hidden selected>Country I'm interested in</option>
+                                            <option>USA</option>
+                                            <option>UK</option>
+                                            <option>France</option>
+                                            <option>Netherlands</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="col-sm-1 labels">Details </label>
+                                    <div class="col-sm-10 col-sm-offset-1 col-md-offset-0 message">
+                                        <textarea class="form-control" name="citybreaksummary" placeholder="Tell us which city you want to book and some details about your trip and we'll get back to you with some quotes..." id="message_input" cols="30" rows="5" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="submit">
+                                    <input type="submit" value="Send Message" id="form_button" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!--Fixed Back to Top Button -->
+    
+            <div id="toTop" class="top_btn">
+                <a href="#nav"><button class="top-btn"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></button></a>
+            </div>
+    
+            <!----------------Footer-------------->
+    
+            <footer>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="logo">
+                            <h5><a href="#nav">Concrete Jungle Holidays</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="footer-icons">
+                            <a href="#"><span class="icon-style"><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+                            <a href="#"><span class="icon-style"><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+                            <a href="#"><span class="icon-style"><i class="fa fa-pinterest-p" aria-hidden="true"></i></span></a>
+                            <a href="#"><span class="icon-style"><i class="fa fa-twitter" aria-hidden="true"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="footer-text">
+                            <p>Interactive Frontend Development Milestone Project</p>
+                            <p>Created by Code Institute Bootcamper Heather Caputo</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+        </div> <!--end of container-->
+    
+        <!--Bootstrap JS JQuery-->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!--custom JS    -->
+        <script src="assets/js/map.js"></script>
+        <script src="assets/js/sendEmail.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <!--google map api -->
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF_dyNMt5EvrxUQ0k3CMWJygiwsmVVCNg&libraries=places&callback=initMap"></script>
+    </body>
 
 </html>
